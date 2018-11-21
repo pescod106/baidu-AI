@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56001c1b-6b24-4eca-8cac-36e713670d87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ai-ocr/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcrOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/BasicAccurateGeneralOptionsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/BasicGeneralOptionsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/GeneralOptionsImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/ReceiptOptionsImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/VatInvoiceOptionsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/java/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/java/com/ltar/ai/ocr/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/ai-app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/spring/aip-ocr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/spring/spring-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ai-base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcr.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcrOptions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcr.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicAccurateGeneralImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/BasicAccurateGeneralOptionsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicGeneralImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/BasicGeneralOptionsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/GeneralImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/GeneralOptionsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/test/resources/ai-app.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/ai-app.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/test/resources/spring/aip-ocr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/spring/aip-ocr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-base/src/test/resources/spring/spring-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/src/test/resources/spring/spring-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai-invoice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ai-ocr/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ai-invoice/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,23 +48,23 @@
         <counts>
           <entry key="class" value="6" />
           <entry key="fxml" value="1" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="java" value="20" />
           <entry key="preperties" value="1" />
           <entry key="properties" value="2" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="18" />
           <entry key="xsl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="6" />
-          <entry key="Git file" value="2" />
+          <entry key="Git file" value="3" />
           <entry key="JAVA" value="20" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="19" />
+          <entry key="XML" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -104,18 +103,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ai-base/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -125,28 +112,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/GeneralOptionsImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcrOptions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state relative-caret-position="146">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,7 +128,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ai-ocr/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="585">
@@ -178,12 +147,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/java/BaseTest.java">
+        <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/java/com/ltar/ai/ocr/BaseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="399">
+              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/dictionaries/pescod.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -323,6 +314,23 @@
             <path>
               <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="dictionaries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="inspectionProfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
               <item name="ai-base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,33 +359,7 @@
               <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
               <item name="ai-base" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="constant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
-              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
-              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
-              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
@@ -442,6 +424,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-ocr" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -461,18 +452,18 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ai-ocr/src/test/resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.ltar.ai.ocr" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ai-base/src/test/resources" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ai-ocr/src/test/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -573,11 +564,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18784000" />
+    <option name="totallyTimeSpent" value="18841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-900" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -619,13 +609,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/ai-app.preperties" />
     <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.xml.fxml" />
     <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.xsl" />
@@ -709,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/resources/spring/spring-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
+        <state relative-caret-position="180">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -757,16 +740,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcrOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcrOptions.java" />
     <entry file="file://$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/impl/GeneralOptionsImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -786,8 +760,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ai-ocr/src/main/java/com/ltar/ai/ocr/service/BaiDuAiOcr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state relative-caret-position="146">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -837,20 +811,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai-invoice/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/java/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-invoice/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/java/BaseTest.java" />
     <entry file="file://$PROJECT_DIR$/ai-base/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -869,6 +831,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-ocr/src/test/java/com/ltar/ai/ocr/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/pescod.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>

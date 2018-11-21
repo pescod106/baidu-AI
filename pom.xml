@@ -12,7 +12,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>ai-invoice</module>
         <module>ai-base</module>
         <module>ai-box</module>
         <module>ai-ocr</module>
@@ -30,11 +29,6 @@
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>ai-base</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.ltar</groupId>
-                <artifactId>ai-invoice</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
