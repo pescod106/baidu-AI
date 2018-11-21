@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ai-base" />
         <module name="ai-box" />
-        <module name="ai-invoice" />
+        <module name="ai-ocr" />
       </profile>
     </annotationProcessing>
   </component>

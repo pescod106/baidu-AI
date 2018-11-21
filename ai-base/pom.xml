@@ -11,33 +11,4 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ai-base</artifactId>
     <description>百度AI开放平台基础模块</description>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baidu.aip</groupId>
-            <artifactId>java-sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ltar</groupId>
-            <artifactId>fw-base</artifactId>
-        </dependency>
-    </dependencies>
-
-
 </project>
