@@ -1,12 +1,10 @@
-package base;
+package com.ltar.ai.ocr;
 
-import com.baidu.aip.ocr.AipOcr;
-import com.ltar.ai.base.service.BaiDuAiOcr;
+import com.ltar.ai.ocr.service.BaiDuAiOcr;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -25,13 +23,12 @@ import java.io.InputStream;
 public class BaseTest {
 
     @Autowired
-    @Qualifier("basicAccurateGeneralImpl")
     private BaiDuAiOcr baiDuAiOcr;
 
     @Test
     public void testClient() {
-        String imgPath = "/Users/pescod/Desktop/test.png";
-        JSONObject jsonObject = baiDuAiOcr.getResponse(getImgStr(imgPath));
+        String imgPath = "/Users/pescod/Desktop/timg.png";
+        JSONObject jsonObject = baiDuAiOcr.vatInvoice(imgPath);
         System.out.println(jsonObject);
     }
 

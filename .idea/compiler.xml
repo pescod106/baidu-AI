@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ai-base" />
         <module name="ai-box" />
-        <module name="ai-invoice" />
+        <module name="ai-ocr" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ai-invoice" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

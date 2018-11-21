@@ -15,6 +15,7 @@
         <module>ai-invoice</module>
         <module>ai-base</module>
         <module>ai-box</module>
+        <module>ai-ocr</module>
     </modules>
 
     <properties>
