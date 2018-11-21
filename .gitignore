@@ -24,3 +24,11 @@ target/
 hs_err_pid*
 .idea/
 *.iml
+logs/
+.classpath
+.project
+.settings
+bin/
+.checkstyle
+.DS_Store
+

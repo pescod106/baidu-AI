@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56001c1b-6b24-4eca-8cac-36e713670d87" name="Default Changelist" comment="" />
+    <list default="true" id="56001c1b-6b24-4eca-8cac-36e713670d87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ai-base/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/constant/AiApiKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicAccurateGeneralImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicGeneralImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/GeneralImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/test/resources/ai-app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/test/resources/spring/aip-ocr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-base/src/test/resources/spring/spring-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-box/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-box/src/main/resources/ai-app.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-box/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-box/src/main/resources/spring/aip-ocr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai-box/src/main/resources/spring/spring-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ai-invoice/target/" />
+    <ignored path="$PROJECT_DIR$/ai-base/target/" />
+    <ignored path="$PROJECT_DIR$/ai-box/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,53 +40,202 @@
     <session id="-147877429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="xml" value="1" />
+          <entry key="class" value="6" />
+          <entry key="fxml" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="14" />
+          <entry key="preperties" value="1" />
+          <entry key="properties" value="2" />
+          <entry key="tld" value="1" />
+          <entry key="xml" value="12" />
+          <entry key="xsl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="XML" value="1" />
+          <entry key="CLASS" value="6" />
+          <entry key="Git file" value="2" />
+          <entry key="JAVA" value="14" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="xml" value="40" />
+          <entry key="dummy" value="6" />
+          <entry key="gitignore" value="1" />
+          <entry key="java" value="940" />
+          <entry key="properties" value="51" />
+          <entry key="xml" value="791" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="XML" value="40" />
+          <entry key="Git file" value="1" />
+          <entry key="JAVA" value="940" />
+          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="Properties" value="51" />
+          <entry key="XML" value="791" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/baidu/aip/java-sdk/4.8.0/java-sdk-4.8.0-sources.jar!/com/baidu/aip/ocr/AipOcr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="90">
+              <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+              <folding>
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="531">
+              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicGeneralImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ai-invoice/pom.xml">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicAccurateGeneralImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+            <state relative-caret-position="360">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#721#722#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/GeneralImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1030">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/baidu/aip/java-sdk/4.8.0/java-sdk-4.8.0-sources.jar!/com/baidu/aip/client/BaseClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+              <folding>
+                <element signature="class#AuthState#0;class#BaseClient#0" />
+                <element signature="method#BaseClient#0;class#BaseClient#0" />
+                <element signature="method#setConnectionTimeoutInMillis#0;class#BaseClient#0" />
+                <element signature="method#setSocketTimeoutInMillis#0;class#BaseClient#0" />
+                <element signature="method#setHttpProxy#0;class#BaseClient#0" />
+                <element signature="method#getAccessToken#0;class#BaseClient#0" />
+                <element signature="method#needAuth#0;class#BaseClient#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="XSLT Stylesheet" />
+        <option value="Tag Library Descriptor" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>maxH</find>
+      <find>FileNamePattern</find>
+      <find>maxHistory</find>
+      <find>logba</find>
+      <find>spring-test</find>
+      <find>s</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,8 +243,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ai-invoice/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/ai-box/src/main/resources/logback.xml.fxml" />
+        <option value="$PROJECT_DIR$/ai-box/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/constant/AiApiKey.java" />
+        <option value="$PROJECT_DIR$/ai-box/src/main/resources/ai-app.properties" />
+        <option value="$PROJECT_DIR$/ai-box/src/main/resources/spring/aip-ocr.xml" />
+        <option value="$PROJECT_DIR$/ai-box/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-box/src/main/resources/spring/spring-config.xml" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOptions.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcrOptions.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/test/resources/spring/spring-config.xml" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BaiDuAiOcr.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiduAiOcr.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcr.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcr.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicAccurateGeneralImpl.java" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicGeneralImpl.java" />
+        <option value="$PROJECT_DIR$/ai-base/pom.xml" />
+        <option value="$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/GeneralImpl.java" />
       </list>
     </option>
   </component>
@@ -87,9 +281,48 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="y" value="-900" />
     <option name="width" value="1440" />
     <option name="height" value="900" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -105,6 +338,138 @@
               <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-box" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-box" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-box" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-box" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="baidu-ai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baidu-ai" type="462c0819:PsiDirectoryNode" />
+              <item name="ai-box" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -115,11 +480,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542630423221" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ai-base/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -133,6 +506,29 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="BaseTest.testClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ai-base" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="base" />
+      <option name="MAIN_CLASS_NAME" value="base.BaseTest" />
+      <option name="METHOD_NAME" value="testClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BaseTest.testClient" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -143,43 +539,80 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542597607604</updated>
-      <workItem from="1542597609055" duration="844000" />
+      <workItem from="1542597609055" duration="11949000" />
+      <workItem from="1542680530378" duration="2998000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 06m 12s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 29m 19s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 30m 15s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 30m 37s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 31m 22s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 32m 20s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 32m 44s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 36m 31s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 52m 01s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BaseTest_testClient - 2018.11.19 at 16h 52m 32s.xml">
+      <configuration name="BaseTest.testClient" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="844000" />
+    <option name="totallyTimeSpent" value="14947000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="-900" width="1440" height="900" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.24177396" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,10 +622,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="349">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -200,6 +633,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/ai-app.preperties" />
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.xml.fxml" />
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.xsl" />
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.tld" />
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/RollingFileAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar!/org/apache/log4j/RollingFileAppender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/ch/qos/logback/core/rolling/RollingFileAppender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="97" column="86" selection-start-line="97" selection-start-column="71" selection-end-line="97" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/ch/qos/logback/classic/encoder/PatternLayoutEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar!/ch/qos/logback/core/rolling/TimeBasedRollingPolicy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/constant/AiApiKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baidu/aip/java-sdk/4.8.0/java-sdk-4.8.0.jar!/com/baidu/aip/ocr/AipOcr.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/ai-app.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="56" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/spring/aip-ocr.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/test/resources/spring/aip-ocr.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-box/src/main/resources/spring/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="90" selection-start-line="1" selection-end-line="7" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/test/resources/spring/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="100" selection-start-line="15" selection-start-column="100" selection-end-line="15" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/test/java/base/BaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1030">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicGeneralImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/GeneralImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baidu/aip/java-sdk/4.8.0/java-sdk-4.8.0-sources.jar!/com/baidu/aip/client/BaseClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+          <folding>
+            <element signature="class#AuthState#0;class#BaseClient#0" />
+            <element signature="method#BaseClient#0;class#BaseClient#0" />
+            <element signature="method#setConnectionTimeoutInMillis#0;class#BaseClient#0" />
+            <element signature="method#setSocketTimeoutInMillis#0;class#BaseClient#0" />
+            <element signature="method#setHttpProxy#0;class#BaseClient#0" />
+            <element signature="method#getAccessToken#0;class#BaseClient#0" />
+            <element signature="method#needAuth#0;class#BaseClient#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baidu/aip/java-sdk/4.8.0/java-sdk-4.8.0-sources.jar!/com/baidu/aip/ocr/AipOcr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/BaiDuAiOcr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/AbstractBaiDuAiOcr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai-base/src/main/java/com/ltar/ai/base/service/impl/BasicAccurateGeneralImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -255,7 +888,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ai-invoice</last-edited>
+          <last-edited>ai-box</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
