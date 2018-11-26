@@ -18,11 +18,14 @@
     </modules>
 
     <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <com.baidu.aip.version>4.8.0</com.baidu.aip.version>
         <spring.version>5.0.9.RELEASE</spring.version>
         <logback.version>1.2.3</logback.version>
         <junit.version>4.12</junit.version>
         <ltar.fw.version>0.1.0-SNAPSHOT</ltar.fw.version>
+
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -31,6 +34,11 @@
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>ai-base</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-ocr</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -72,11 +80,6 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
                 <artifactId>spring-test</artifactId>
                 <version>${spring.version}</version>
                 <scope>test</scope>
@@ -107,7 +110,7 @@
                 <version>${com.baidu.aip.version}</version>
             </dependency>
 
-            <!---->
+            <!--pescod-framework-->
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>fw-base</artifactId>
@@ -118,8 +121,26 @@
                 <artifactId>fw-web</artifactId>
                 <version>${ltar.fw.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.7.0</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <showDeprecation>true</showDeprecation>
+                        <showWarnings>true</showWarnings>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
     <repositories>
         <repository>
             <id>ali_mvn_repository</id>

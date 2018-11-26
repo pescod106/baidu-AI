@@ -1,7 +1,6 @@
 package com.ltar.ai.ocr.service.impl;
 
 import com.ltar.ai.ocr.service.AbstractBaiduAipOcr;
-import org.json.JSONObject;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -17,17 +16,16 @@ public class GeneralOcr extends AbstractBaiduAipOcr {
 
     @Override
     protected ServiceCaller getServiceCaller() {
-        return new ServiceCaller() {
-            public JSONObject requestAip(byte[] image) {
-                HashMap<String, String> options = new HashMap<String, String>();
-                options.put("recognize_granularity", "big");
-                options.put("language_type", "CHN_ENG");
-                options.put("detect_direction", "true");
-                options.put("detect_language", "true");
-                options.put("vertexes_location", "true");
-                options.put("probability", "true");
-                return aipOcr.general(image, options);
-            }
+        return (image) -> {
+            HashMap<String, String> options = new HashMap<String, String>(5);
+            options.put("recognize_granularity", "big");
+            options.put("language_type", "CHN_ENG");
+            options.put("detect_direction", "true");
+            options.put("detect_language", "true");
+            options.put("vertexes_location", "true");
+            options.put("probability", "true");
+            return aipOcr.general(image, options);
+
         };
     }
 }
