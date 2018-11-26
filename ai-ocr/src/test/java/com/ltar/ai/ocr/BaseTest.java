@@ -27,27 +27,24 @@ public class BaseTest {
 
     @Test
     public void testClient() {
-        String imgPath = "/Users/pescod/Desktop/timg.png";
-        JSONObject jsonObject = baiDuAiOcr.vatInvoice(imgPath);
+        String imgPath = "/Users/pescod/Desktop/time.png";
+        JSONObject jsonObject = baiDuAiOcr.requestAip("generalOcr", imgPath);
         System.out.println(jsonObject);
     }
 
-    public static byte[] getImgStr(String imgFile){
+    public static byte[] getImgStr(String imgFile) {
         //将图片文件转化为字节数组字符串，并对其进行Base64编码处理
 
 
         InputStream in = null;
         byte[] data = null;
         //读取图片字节数组
-        try
-        {
+        try {
             in = new FileInputStream(imgFile);
             data = new byte[in.available()];
             in.read(data);
             in.close();
-        }
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return data;

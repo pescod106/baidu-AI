@@ -1,14 +1,12 @@
 package com.ltar.ai.ocr.service;
 
-import com.baidu.aip.ocr.AipOcr;
-import com.ltar.ai.ocr.service.impl.BasicGeneralOptionsImpl;
-import com.ltar.ai.ocr.service.impl.GeneralOptionsImpl;
-import com.ltar.ai.ocr.service.impl.ReceiptOptionsImpl;
-import com.ltar.ai.ocr.service.impl.VatInvoiceOptionsImpl;
-import com.ltar.base.util.StreamUtils;
+import com.ltar.framework.base.provider.ApplicationContextProvider;
 import org.json.JSONObject;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Map;
 
 /**
  * @desc:
@@ -17,52 +15,21 @@ import org.springframework.stereotype.Service;
  * @version: 1.0.0
  */
 @Service
-public class BaiDuAiOcr {
+public class BaiDuAiOcr implements InitializingBean {
 
     @Autowired
-    private AipOcr aipOcr;
+    private ApplicationContextProvider applicationContextProvider;
 
     /**
-     * 通用文字识别接口
-     * 用户向服务请求识别某张图中的所有文字
-     *
-     * @param image
-     * @return
+     * 存储所有百度OCR接口的实现类
      */
-    public JSONObject basicGeneral(String image) {
-        return aipOcr.basicGeneral(
-                StreamUtils.fileToByte(image),
-                (new BasicGeneralOptionsImpl()).generateOptionMap()
-        );
+    private static Map<String, BaiduAipOcr> beanMap = null;
+
+    public JSONObject requestAip(String ocrType, String imagePath) {
+        return beanMap.get(ocrType).requestAip(imagePath);
     }
 
-    public JSONObject basicAccurateGeneral(String image) {
-        return aipOcr.basicAccurateGeneral(
-                StreamUtils.fileToByte(image),
-                (new BasicGeneralOptionsImpl()).generateOptionMap()
-        );
+    public void afterPropertiesSet() throws Exception {
+        beanMap = applicationContextProvider.getBeansOfType(BaiduAipOcr.class);
     }
-
-    public JSONObject general(String image){
-        return aipOcr.general(
-                StreamUtils.fileToByte(image),
-                (new GeneralOptionsImpl()).generateOptionMap()
-        );
-    }
-
-    public JSONObject receipt(String image) {
-        return aipOcr.receipt(
-                StreamUtils.fileToByte(image),
-                (new ReceiptOptionsImpl()).generateOptionMap()
-        );
-    }
-
-    public JSONObject vatInvoice(String image){
-        return aipOcr.vatInvoice(
-                StreamUtils.fileToByte(image),
-                (new VatInvoiceOptionsImpl()).generateOptionMap()
-        );
-    }
-
-
 }
