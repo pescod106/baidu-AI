@@ -29,7 +29,8 @@ public class BaiDuAiOcr implements InitializingBean {
         return beanMap.get(ocrType).requestAip(imagePath);
     }
 
-    public void afterPropertiesSet() throws Exception {
+    @Override
+    public void afterPropertiesSet() {
         beanMap = applicationContextProvider.getBeansOfType(BaiduAipOcr.class);
     }
 }

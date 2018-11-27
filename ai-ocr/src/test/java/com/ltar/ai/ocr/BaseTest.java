@@ -1,5 +1,6 @@
 package com.ltar.ai.ocr;
 
+import com.fasterxml.jackson.databind.exc.InvalidDefinitionException;
 import com.ltar.ai.ocr.service.BaiDuAiOcr;
 import org.json.JSONObject;
 import org.junit.Test;
@@ -45,6 +46,7 @@ public class BaseTest {
             in.read(data);
             in.close();
         } catch (IOException e) {
+
             e.printStackTrace();
         }
         return data;
