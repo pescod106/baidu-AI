@@ -12,13 +12,20 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @version: 1.0.0
  */
 public abstract class AbstractBaiduAipOcr implements BaiduAipOcr {
+
     @Autowired
     protected AipOcr aipOcr;
 
+    @Override
     public JSONObject requestAip(String image) {
         return getServiceCaller().requestAip(StreamUtils.fileToByte(image));
     }
 
+    /**
+     * 获取实现类
+     *
+     * @return
+     */
     protected abstract ServiceCaller getServiceCaller();
 
 

@@ -1,13 +1,13 @@
 package com.ltar.ai.ocr.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.ltar.ai.ocr.service.BaiDuAiOcr;
 import com.ltar.framework.web.vo.JsonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * @desc:
@@ -24,7 +24,11 @@ public class BaiduAipController {
 
     @RequestMapping(value = "/ocr/{ocrType}", method = RequestMethod.POST)
     @ResponseBody
-    public JsonResponse imageOcr(@PathVariable(value = "ocrType") String ocrType, String image) {
-        return new JsonResponse().set("result", baiDuAiOcr.requestAip(ocrType, image));
+    public JsonResponse imageOcr(@PathVariable(value = "ocrType") String ocrType,
+                                 @RequestParam(value = "image") String image) {
+        return new JsonResponse()
+                .setData(JSONObject.parseObject(baiDuAiOcr.requestAip(ocrType, image).toString(), Map.class));
     }
+
+
 }
