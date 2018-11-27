@@ -6,23 +6,20 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
 /**
- * @desc: 通用文字识别（高精度版）
+ * @desc: 身份证识别-背面
  * @author: changzhigao
- * @date: 2018/11/26
+ * @date: 2018/11/27
  * @version: 1.0.0
  */
 @Component
-public class BasicAccurateGeneralOcr extends AbstractBaiduAipOcr {
-
+public class IdCardBackOcr extends AbstractBaiduAipOcr {
     @Override
     protected ServiceCaller getServiceCaller() {
         return (image) -> {
-            HashMap<String, String> options = new HashMap<String, String>(2);
+            HashMap<String, String> options = new HashMap<>(2);
             options.put("detect_direction", "true");
-            options.put("probability", "true");
-
-            return aipOcr.basicAccurateGeneral(image, options);
-
+            options.put("detect_risk", "false");
+            return aipOcr.idcard(image, "back", options);
         };
     }
 }

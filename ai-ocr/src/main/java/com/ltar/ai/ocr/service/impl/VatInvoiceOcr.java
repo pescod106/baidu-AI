@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
 /**
- * @desc:
+ * @desc: 增值税发票识别
  * @author: changzhigao
  * @date: 2018/11/26
  * @version: 1.0.0
@@ -19,7 +19,6 @@ public class VatInvoiceOcr extends AbstractBaiduAipOcr {
         return (image) -> {
             HashMap<String, String> options = new HashMap<String, String>(0);
             return aipOcr.vatInvoice(image, options);
-
         };
     }
 }

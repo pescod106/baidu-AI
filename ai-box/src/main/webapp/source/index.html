@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0,maximum-scale=1.0" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/Validform_v5.3.2.js"></script>
+<script src="js/Validform_Datatype.js"></script>
+<title>领取新人礼包</title>
+<style type="text/css">
+body{
+    font-family:微软雅黑;
+    background-color:#F2F5F8;
+    background-image:url(images/bg_img.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+  padding-top:0.1em;
+}
+#getcode{
+    background-color:#ffda44;
+    box-shadow:0 0.3em 0 #ffbb34;
+}
+#getcode:active {
+    background-color:#ffc000;
+    box-shadow:0 0.3em 0 #de9200;
+}
+.redbutton{
+    background-color:#ff4f5b;
+    box-shadow:0 0.3em 0 #e3332e;
+}
+.redbutton:active{
+    background-color:#cc4242;
+    box-shadow:0 0.3em 0 #bd2424;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-xs-10 col-xs-offset-1">
+            <img src="images/welcome.png" style="width:100%;">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1">
+            <!--<div class="col-xs-12" style="padding:0; margin-top:1em;color:#fff;">
+                <input type="text" name="phone" datatype="*" nullmsg="请输入手机号" errormsg="您输入的手机号码不正确" class="input-lg" style="width:100%; height:2.5em;font-size:1.1em; border:0;background-color:#ad91f9;" placeholder="请输入11位手机号" />
+            </div>
+            <div class="col-xs-7" style="padding:0;margin-top:0.6em;color:#fff;">
+                <input type="text" datatype="*" nullmsg="请输入验证码" class="input-lg" style="width:100%;height:2.5em;font-size:1.1em;border:0;background-color:#ad91f9;" placeholder="短信验证码" />
+            </div>
+            <div class="col-xs-5" style="padding:0; margin-top:0.6em;">
+                <div id="getcode" style="padding:0.7em 0; margin-top:0.2em; margin-left:10%;text-align:center;font-size:0.9em; width:90%; height:2.6em;border:0;-webkit-border-radius:0.3em;color:#af7400;">获取验证码</div>
+            </div>
+            <div class="col-xs-12" style="padding:0;margin-top:0.6em;color:#ffda2f; font-size:.8em;">
+                通过本页完成注册视为成功绑定好友关系
+            </div>-->
+            <div style="text-align:center;">
+                <img src="images/weiboerweima.png" />
+            </div>
+            <div class="col-xs-12" style="padding:0;margin-top:1.6em; height:2.6em;">
+                <!--<button class="redbutton" style="width:100%; height:100%; magine:0.2em;color:#FFF;border:0;border-radius:.2em;">立即下载</button>-->
+            </div>
+        </div>
+    </div>
+    <!--模态框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" style="margin-top:6em;">
+            <div class="col-xs-10 col-xs-offset-1" style=" padding-top:1em;background-image:url(images/modal.png);background-repeat:no-repeat;height:18em;-moz-background-size:100% 100%;background-size:100% 100%;">
+                <div style="height:2.8em;color:#fff; text-align:center; padding-top:1em;">
+                    恭喜您已经注册成功
+                </div>
+                <div style="height:14em;">
+                    <div style="color:#f84c49; text-align:center; font-size:1.2em; margin:2em 0;">
+                        <p>下载APP立即</p>
+                        <p>领现金和优惠券礼包</p>
+                    </div>
+                    <!--<div class="col-xs-10 col-xs-offset-1" style="height:2.6em;">-->
+                        <!--<button class="redbutton" style="width:100%;height:100%;magine:0.2em;color:#FFF;border:0;border-radius:.2em;">立即下载</button>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div class="col-xs-2 col-xs-offset-5" id="closemodal">
+                <img src="images/ico_close.png" style="width:100%;" />
+            </div>
+        </div><!-- /.modal -->
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+document.body.addEventListener('touchstart', function(){});  
+$(function(){
+    $("button").click(function(){
+        //$("#myModal").modal('show');
+//        location.href="http://sp1.tianjin.huoqiu.cn/source/app.apk";
+    })
+    $("#closemodal").click(function(){
+        $("#myModal").modal('hide');
+    })
+})
+</script>
