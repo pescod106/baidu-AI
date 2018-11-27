@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
 /**
- * @desc:
+ * @desc: 通用文字识别（含位置信息版）
  * @author: changzhigao
  * @date: 2018/11/26
  * @version: 1.0.0
