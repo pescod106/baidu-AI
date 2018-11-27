@@ -14,7 +14,9 @@
     <modules>
         <module>ai-base</module>
         <module>ai-box</module>
-        <module>ai-ocr</module>
+        <module>ai-optesthesia</module>
+        <module>ai-voice</module>
+        <module>ai-language</module>
     </modules>
 
     <properties>
@@ -31,6 +33,8 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+
+            <!--项目模块-->
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>ai-base</artifactId>
@@ -38,7 +42,17 @@
             </dependency>
             <dependency>
                 <groupId>com.ltar</groupId>
-                <artifactId>ai-ocr</artifactId>
+                <artifactId>ai-optesthesia</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-language</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-voice</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -121,6 +135,7 @@
                 <version>${com.baidu.aip.version}</version>
             </dependency>
 
+            <!--json-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>

@@ -21,7 +21,15 @@
         </dependency>
         <dependency>
             <groupId>com.ltar</groupId>
-            <artifactId>ai-ocr</artifactId>
+            <artifactId>ai-optesthesia</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>ai-language</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>ai-voice</artifactId>
         </dependency>
 
         <!--spring-->
