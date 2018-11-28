@@ -11,5 +11,27 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ai-base</artifactId>
     <description>百度AI开放平台基础模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>fw-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>fw-base</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

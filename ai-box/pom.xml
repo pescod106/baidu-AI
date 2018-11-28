@@ -21,7 +21,15 @@
         </dependency>
         <dependency>
             <groupId>com.ltar</groupId>
-            <artifactId>ai-ocr</artifactId>
+            <artifactId>ai-optesthesia</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>ai-language</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ltar</groupId>
+            <artifactId>ai-voice</artifactId>
         </dependency>
 
         <!--spring-->
@@ -38,10 +46,10 @@
             <artifactId>spring-context</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-        </dependency>
+        <!--<dependency>-->
+        <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+        <!--<artifactId>jackson-core</artifactId>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -50,6 +58,9 @@
 
     <build>
         <finalName>baidu-aip</finalName>
+        <filters>
+            <filter>src/main/profiles/${env}/filter-${env}.properties</filter>
+        </filters>
         <!-- 定义资源的打包规则 -->
         <resources>
             <resource>
@@ -68,4 +79,21 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>prd</id>
+            <properties>
+                <env>prd</env>
+            </properties>
+        </profile>
+    </profiles>
 </project>

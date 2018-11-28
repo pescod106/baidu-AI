@@ -13,12 +13,17 @@
     <!--开启注解-->
     <mvc:annotation-driven/>
     <!--注解扫描包-->
-    <context:component-scan base-package="com.ltar.ai,
-                                        com.ltar.framework.base.provider"
+    <context:component-scan base-package="com.ltar.ai"
                             use-default-filters="false">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
     <context:property-placeholder ignore-resource-not-found="false"
                                   location="classpath:ai-app.properties"/>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="104857600"/>
+        <property name="maxInMemorySize" value="4096"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
 </beans>
