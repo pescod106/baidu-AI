@@ -14,21 +14,45 @@
     <modules>
         <module>ai-base</module>
         <module>ai-box</module>
-        <module>ai-ocr</module>
+        <module>ai-optesthesia</module>
+        <module>ai-voice</module>
+        <module>ai-language</module>
     </modules>
 
     <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <com.baidu.aip.version>4.8.0</com.baidu.aip.version>
         <spring.version>5.0.9.RELEASE</spring.version>
         <logback.version>1.2.3</logback.version>
         <junit.version>4.12</junit.version>
         <ltar.fw.version>0.1.0-SNAPSHOT</ltar.fw.version>
+        <jackson.version>2.9.7</jackson.version>
+        <fastjson.version>1.2.52</fastjson.version>
+        <commons.io.version>2.6</commons.io.version>
     </properties>
     <dependencyManagement>
         <dependencies>
+
+            <!--项目模块-->
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>ai-base</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-optesthesia</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-language</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>ai-voice</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
@@ -55,17 +79,17 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-tx</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-jdbc</artifactId>
                 <version>${spring.version}</version>
             </dependency>
             <dependency>
@@ -93,6 +117,18 @@
                 <version>${logback.version}</version>
             </dependency>
 
+            <!---->
+            <!--<dependency>-->
+                <!--<groupId>com.fasterxml.jackson.core</groupId>-->
+                <!--<artifactId>jackson-core</artifactId>-->
+                <!--<version>${jackson.version}</version>-->
+            <!--</dependency>-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+
             <!--百度AI开放平台-->
             <dependency>
                 <groupId>com.baidu.aip</groupId>
@@ -100,15 +136,118 @@
                 <version>${com.baidu.aip.version}</version>
             </dependency>
 
-            <!---->
+            <!--json-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
+
+            <!--pescod-framework-->
             <dependency>
                 <groupId>com.ltar</groupId>
                 <artifactId>fw-base</artifactId>
                 <version>${ltar.fw.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.ltar</groupId>
+                <artifactId>fw-web</artifactId>
+                <version>${ltar.fw.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
+    <build>
+        <!-- 定义资源的打包规则 -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                    <include>META-INF/**/*.*</include>
+                    <include>**/*.xsd</include>
+                </includes>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.0.0</version>
+            </plugin>
+            <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <encoding>UTF-8</encoding><!-- 指定编码格式，否则在DOS下运行mvn命令时当发生文件资源copy时将使用系统默认使用GBK编码 -->
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <!-- 进行package命令时就可以将源码同时进行打包 -->
+                <!-- 所以我们需要绑定source插件到我们default生命周期的package阶段 -->
+                <executions>
+                    <execution>
+                        <!-- 定义一个阶段，这个阶段是package -->
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
     <repositories>
+        <repository>
+            <id>ali_mvn_repository</id>
+            <name>aliyun mvn repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+
         <repository>
             <id>central-apache</id>
             <name>Central Repository</name>
@@ -123,12 +262,6 @@
             <id>sonatype</id>
             <name>Sonatype Repository</name>
             <url>https://oss.sonatype.org/content/groups/public</url>
-        </repository>
-
-        <repository>
-            <id>ali_mvn_repository</id>
-            <name>aliyun mvn repository</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
     </repositories>
 
