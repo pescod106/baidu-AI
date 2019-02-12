@@ -21,8 +21,8 @@ import java.time.format.DateTimeFormatter;
  * @date: 2018/11/28
  * @version: 1.0.0
  */
-@Controller
-@RequestMapping("/aip")
+//@Controller
+//@RequestMapping("/aip")
 public class MediaController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MediaController.class);
 

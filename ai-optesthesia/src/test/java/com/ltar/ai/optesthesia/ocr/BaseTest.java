@@ -27,8 +27,8 @@ public class BaseTest {
 
     @Test
     public void testClient() {
-        String imgPath = "/Users/pescod/Desktop/time.png";
-        JSONObject jsonObject = baiDuAiOcr.requestAip("generalOcr", imgPath);
+        String imgPath = "/Users/pescod/Desktop/WX20190130.png";
+        JSONObject jsonObject = baiDuAiOcr.requestAip("basicAccurateGeneralOcr", imgPath);
         System.out.println(jsonObject);
     }
 

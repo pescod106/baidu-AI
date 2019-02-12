@@ -57,7 +57,7 @@
     </dependencies>
 
     <build>
-        <finalName>baidu-aip</finalName>
+        <finalName>pescod-ai</finalName>
         <filters>
             <filter>src/main/profiles/${env}/filter-${env}.properties</filter>
         </filters>

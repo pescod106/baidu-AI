@@ -1,6 +1,6 @@
-package com.ltar.ai.ocr.service.impl;
+package com.ltar.ai.optesthesia.ocr.service.impl;
 
-import com.ltar.ai.ocr.service.AbstractBaiduAipOcr;
+import com.ltar.ai.optesthesia.ocr.service.AbstractBaiduAipOcr;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
